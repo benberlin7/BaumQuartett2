@@ -1,0 +1,2 @@
+rootProject.name='BaumQuartett2'
+include ':app'

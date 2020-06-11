@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/menu_background"
+	tools:context=".FirstFragment_MainMenu">
+
+	<Button
+		android:id="@+id/button_first"
+		android:layout_width="112dp"
+		android:layout_height="50dp"
+		android:background="@drawable/card_back_blank"
+		android:fontFamily="@font/skranji"
+		android:text="@string/kartensatz"
+		android:textColor="#DDE6E4"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textview_first" />
+
+	<Button
+		android:id="@+id/button_einstellungen"
+		android:layout_width="112dp"
+		android:layout_height="50dp"
+		android:background="@drawable/card_back_blank"
+		android:fontFamily="@font/skranji"
+		android:text="@string/einstellungen"
+		android:textColor="#DDE6E4"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.501"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/button_first"
+		app:layout_constraintVertical_bias="0.748" />
+
+	<ImageView
+		android:id="@+id/imageViewMainBackground"
+		android:layout_width="411dp"
+		android:layout_height="729dp"
+		android:scaleType="fitXY"
+		android:src="@drawable/trees"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textview_first"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/skranji"
+		android:text="@string/hello_first_fragment"
+		android:textAllCaps="true"
+		android:textColor="#FFFFFF"
+		android:textSize="30sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@id/button_first"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.571"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textview_first2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="13dp"
+		android:fontFamily="@font/skranji"
+		android:text="version 1.0"
+		android:textAllCaps="false"
+		android:textColor="#FFFFFF"
+		android:textSize="14sp"
+		android:textStyle="bold|italic"
+		app:layout_constraintBottom_toTopOf="@+id/button_first2"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.501"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textview_first"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<Button
+		android:id="@+id/button_first2"
+		android:layout_width="112dp"
+		android:layout_height="50dp"
+		android:background="@drawable/card_back_blank"
+		android:fontFamily="@font/skranji"
+		android:text="@string/supertrumpf"
+		android:textColor="#DDE6E4"
+		app:layout_constraintBottom_toTopOf="@+id/button_first"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textview_first"
+		app:layout_constraintVertical_bias="0.284" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

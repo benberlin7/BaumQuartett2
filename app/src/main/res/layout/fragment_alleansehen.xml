@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
+    tools:context=".SecondFragment_AlleAnsehen">
+
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:background="@drawable/card_back_blank"
+        android:fontFamily="@font/skranji"
+        android:text="@string/previous"
+        android:textColor="#DDE6E4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ImageView
+        android:id="@+id/kartenRuecken"
+        android:layout_width="372dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/card_back_blank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card_back_blank" />
+
+    <TextView
+        android:id="@+id/stat1"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:background="@drawable/backgrnd_stats"
+        android:drawableLeft="@drawable/holzwert2"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/skranji"
+        android:text="TextView"
+        android:textColor="#D8C222"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toBottomOf="@+id/baumgattung_text"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <TextView
+        android:id="@+id/stat2"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:background="@drawable/backgrnd_stats"
+        android:drawableLeft="@drawable/height"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/skranji"
+        android:text="TextView"
+        android:textColor="#D8C222"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toBottomOf="@+id/baumgattung_text"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <ImageButton
+        android:id="@+id/nextcard_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toEndOf="@+id/button_second"
+        app:layout_constraintTop_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <ImageButton
+        android:id="@+id/prevcard_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_second"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <TextView
+        android:id="@+id/baumgattung_text"
+        android:layout_width="266dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/skranji"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/kartenbild"
+        app:layout_constraintTop_toBottomOf="@+id/baumname_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/blattart_text"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="center"
+        android:lineSpacingExtra="0sp"
+        android:text="Zusammengesetztes Blatt"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/kartenbild"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/kartenbild"
+        app:layout_constraintTop_toTopOf="@+id/kartenRuecken"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TextView
+        android:id="@+id/kartennr"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="A1"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="28sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/kartenbild"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toTopOf="@+id/kartenRuecken"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/baumname_text"
+        android:layout_width="266dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/skranji"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#D8C222"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toBottomOf="@+id/kartenbild"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/gesamtwert"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="center"
+        android:text="12"
+        android:textColor="#D8C222"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toStartOf="@+id/blattart_text"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toEndOf="@+id/baumart"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toTopOf="@+id/kartenRuecken"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/stat3"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:background="@drawable/backgrnd_stats"
+        android:drawableLeft="@drawable/category_nadelbaum2"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/skranji"
+        android:text="TextView"
+        android:textColor="#D8C222"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toBottomOf="@+id/baumgattung_text"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <TextView
+        android:id="@+id/stat4"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:background="@drawable/backgrnd_stats"
+        android:drawableLeft="@drawable/gift32"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/skranji"
+        android:text="TextView"
+        android:textColor="#D8C222"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toBottomOf="@+id/baumgattung_text"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <ImageView
+        android:id="@+id/kartenbild"
+        android:layout_width="272dp"
+        android:layout_height="166dp"
+        android:src="@drawable/eibe2"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toTopOf="@+id/kartenRuecken"
+        app:layout_constraintVertical_bias="0.17"
+        app:srcCompat="@drawable/eibe3" />
+
+    <ImageView
+        android:id="@+id/baumart"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tree_nadel"
+        app:layout_constraintEnd_toStartOf="@+id/gesamtwert"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toTopOf="@+id/kartenRuecken" />
+
+    <TextView
+        android:id="@+id/beschreibungView"
+        android:layout_width="270dp"
+        android:layout_height="146dp"
+        android:fontFamily="@font/skranji"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kartenRuecken"
+        app:layout_constraintEnd_toEndOf="@+id/kartenRuecken"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/kartenRuecken"
+        app:layout_constraintTop_toBottomOf="@+id/baumgattung_text"
+        app:layout_constraintVertical_bias="0.073" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

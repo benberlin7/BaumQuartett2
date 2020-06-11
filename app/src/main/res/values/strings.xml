@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BaumQuartett2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="supertrumpf">Supertrumpf spielen</string>
+    <string name="kartensatz">Kartensatz ansehen</string>
+    <string name="einstellungen">Einstellungen</string>
+
+    <string name="gegenHuman">2 Spieler</string>
+    <string name="gegenAI">Gegen Computer</string>
+    <string name="anzKart">Anzahl Karten</string>
+    <string name="tonaktiv">Ton aktivieren</string>
+    <string name="aiLevel">KI Schwierigkeit</string>
+    <string name="multiKart">Karten mehrfach verwenden</string>
+    <string name="timeOn">Zeitbegrenzung aktivieren</string>
+    <string name="durchschalten">Letzte 3 Karten frei wählen</string>
+    <string name="timeCur">Zeit aktuell : </string>
+
+    <string name="stdescr">Am Spiel können zwei Personen teilnehmen. Die Karten werden gemischt und gleichmäßig unter den Spielern verteilt. Jeder Spieler hält seine Karten zu einem Päckchen gestapelt so in der Hand, dass nur das oberste Blatt – und zwar nur für ihn – zu sehen ist. Der erste Spieler nennt nun eine beliebige Kenngröße seiner Karte. Nun vergleichen beide diesen Wert, der höhere Wert gewinnt und der Gewinner erhält die Karte seines Gegenspielers. Hält ein Spieler alle Karten hat er das Spiel gewonnen.</string>
+
+
+
+    <string name="next">Weiter</string>
+    <string name="previous">Zurück</string>
+
+    <string name="hello_first_fragment">Baumquartett</string>
+    <string name="hello_second_fragment">Kartensatz. Arg: %1$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

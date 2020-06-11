@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.baumquartett2.FirstFragment_MainMenu"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_mainMenu">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/menu_to_einstellungen"
+            app:destination="@id/einstellungen2" />
+        <action
+            android:id="@+id/thirdFragment"
+            app:destination="@id/thirdFragment_Supertrumpf" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.baumquartett2.SecondFragment_AlleAnsehen"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_alleansehen">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/einstellungen2"
+        android:name="com.example.baumquartett2.FifthFragment_Einstellungen"
+        android:label="Einstellungen" >
+        <action
+            android:id="@+id/einstellungen_to_menu"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment_Supertrumpf"
+        android:name="com.example.baumquartett2.ThirdFragment_SupertrumpfMenu"
+        android:label="fragment_supertrumpf"
+        tools:layout="@layout/fragment_supertrumpfmenu" >
+        <action
+            android:id="@+id/toGame"
+            app:destination="@id/fourthFragment_Supertrumpfgame" />
+        <action
+            android:id="@+id/toMainMenu"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthFragment_Supertrumpfgame"
+        android:name="com.example.baumquartett2.FourthFragment_SupertrumpfGame"
+        android:label="fragment_supertrumpf_game"
+        tools:layout="@layout/fragment_supertrumpf_game" >
+        <action
+            android:id="@+id/toSuperTrumpfSettings"
+            app:destination="@id/thirdFragment_Supertrumpf" />
+    </fragment>
+</navigation>
